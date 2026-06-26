@@ -1,0 +1,147 @@
+/*
+  Minimal, fast, endtimes.dev-style theme.
+  System fonts, single narrow column, no JS, automatic dark mode.
+ */
+
+:root {
+	--bg: #fbfbf9;
+	--bg-code: #f0efea;
+	--text: #1b1b19;
+	--muted: #6c6b66;
+	--border: #e4e3dd;
+	--accent: #c0492f;
+	--font-sans:
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+		sans-serif;
+	--font-mono:
+		ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #16161a;
+		--bg-code: #23242b;
+		--text: #e7e7e3;
+		--muted: #9b9a93;
+		--border: #2b2c33;
+		--accent: #e8765c;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: var(--font-sans);
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-size: 18px;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+main {
+	width: 680px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 2.5em 1em 4em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--text);
+	line-height: 1.25;
+	font-weight: 600;
+}
+h1 {
+	font-size: 1.9rem;
+}
+h2 {
+	font-size: 1.4rem;
+	margin-top: 1.7em;
+}
+h3 {
+	font-size: 1.15rem;
+	margin-top: 1.4em;
+}
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0 0 1.2em;
+}
+strong,
+b {
+	font-weight: 600;
+}
+code {
+	font-family: var(--font-mono);
+	font-size: 0.85em;
+	padding: 2px 5px;
+	background: var(--bg-code);
+	border-radius: 4px;
+}
+pre {
+	font-family: var(--font-mono);
+	padding: 1.1em 1.2em;
+	border-radius: 8px;
+	overflow-x: auto;
+	font-size: 0.82em;
+	line-height: 1.5;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border-left: 3px solid var(--accent);
+	padding-left: 1em;
+	margin: 0 0 1.2em;
+	color: var(--muted);
+}
+hr {
+	border: none;
+	border-top: 1px solid var(--border);
+	margin: 2.2em 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+table {
+	width: 100%;
+}
+@media (max-width: 720px) {
+	body {
+		font-size: 17px;
+	}
+	main {
+		padding: 1.8em 1em 3em;
+	}
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

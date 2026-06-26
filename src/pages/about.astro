@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`About · ${SITE_TITLE}`}
+			description="About Karim Akoudad — AI research from Morocco, building from scratch."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>About</h1>
+			<p>
+				I'm Karim Akoudad. I work on AI / ML from Morocco, and I rebuild things from
+				scratch to actually understand them — micrograd, makemore, GPT, tokenizers —
+				then write up what clicked.
+			</p>
+			<p>
+				This blog is where I think out loud: build logs, concept explainers, and
+				project deep-dives. Writing forces me to understand a topic well enough to
+				teach it. If a post helps you learn something, it did its job.
+			</p>
+			<p>
+				Find me on <a href="https://github.com/akoudad" target="_blank" rel="me noopener"
+					>GitHub</a
+				>. New posts have an <a href="/rss.xml">RSS feed</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

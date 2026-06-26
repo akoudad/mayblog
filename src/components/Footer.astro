@@ -1,0 +1,36 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<span>&copy; {today.getFullYear()} Karim Akoudad</span>
+	<span class="sep">·</span>
+	<a href="https://github.com/akoudad" target="_blank" rel="me noopener">github</a>
+	<span class="sep">·</span>
+	<a href="/rss.xml">rss</a>
+</footer>
+<style>
+	footer {
+		width: 680px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 2em 1em 3em;
+		color: var(--muted);
+		font-family: var(--font-mono);
+		font-size: 0.76rem;
+		border-top: 1px solid var(--border);
+		display: flex;
+		gap: 0.6em;
+		align-items: center;
+	}
+	footer a {
+		color: var(--muted);
+	}
+	footer a:hover {
+		color: var(--accent);
+		text-decoration: none;
+	}
+	.sep {
+		opacity: 0.5;
+	}
+</style>

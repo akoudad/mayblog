@@ -1,0 +1,49 @@
+---
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<a class="site-title" href="/">{SITE_TITLE}</a>
+		<div class="links">
+			<a href="/about">about</a>
+			<a href="/rss.xml">rss</a>
+			<a href="https://github.com/akoudad" target="_blank" rel="me noopener">github</a>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		border-bottom: 1px solid var(--border);
+	}
+	nav {
+		width: 680px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 1.1em 1em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.site-title {
+		font-weight: 600;
+		color: var(--text);
+	}
+	.site-title:hover {
+		text-decoration: none;
+		color: var(--accent);
+	}
+	.links {
+		display: flex;
+		gap: 1.1em;
+		font-family: var(--font-mono);
+		font-size: 0.78rem;
+	}
+	.links a {
+		color: var(--muted);
+	}
+	.links a:hover {
+		color: var(--accent);
+		text-decoration: none;
+	}
+</style>
