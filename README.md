@@ -1,6 +1,6 @@
 # mayblog
 
-My personal blog — writing on AI/ML, mostly things I rebuild from scratch to understand them.
+My personal blog
 
 **Live:** https://mayblog-9e9.pages.dev
 
