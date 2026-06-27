@@ -4,7 +4,7 @@ description: 'imposter syndrome is a gift'
 pubDate: 2026-06-27
 ---
 
-around me there are always confident people, the ones who take the initiative to explain things, who'll argue and tell you they can do anything, that something is easy. at first i thought ok, these people are good, smart. but with time i saw through the fog: they're not as good as i imagined. they think they're good because they know the abc of something, or had a bit of experience... and sometimes nothing at all, just confidence. and me? sometimes i know more than them, but i keep questioning myself, and i feel like i should do more just to have 50% of their confidence. (and i don't think i have a confidence problem. it's just how i think, and my standards for being able to say i "know" something.)
+around me there are always confident people, the ones who take the initiative to explain things, who'll argue and tell you they can do anything, that something is easy. at first i thought ok, these people are good, smart. but with time i saw through the fog: they're not as good as i imagined. they think they're good because they know the abc of something, or had a bit of experience... and sometimes nothing at all, just confidence. and me? sometimes i know more than them, but i keep questioning myself, and i feel like i should do more just to have 50% of their confidence. (and i don't think i have a confidence problem. it's just how i think. my bar for saying i "know" something is high.)
 
 i always hear people say you should get over your fears, that you're just overthinking, that you're wasting opportunities, because other people are landing jobs just by believing in themselves.
 
